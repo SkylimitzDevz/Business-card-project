@@ -1,3 +1,12 @@
+import reactLogo from './assets/react.svg'
+import htmlLogo from './assets/HTML.svg'
+import cssLogo from './assets/CSS.svg'
+import jsLogo from './assets/JS.svg'
+import githubLogo from './assets/github.svg'
+import threadsLogo from './assets/threads.png'
+import xLogo from './assets/x.png'
+
+
 export default function personalInfo() {
     return(
         <div className="personal-info-container">
@@ -8,16 +17,16 @@ export default function personalInfo() {
             <fieldset>
                 <legend>Tech Stack</legend>
                 <div className="logo-list">
-                    <img src="/src/assets/react.svg" alt="react" />
-                    <img src="/src/assets/HTML.svg" alt="html" />
-                    <img src="/src/assets/CSS.svg" alt="css" />
-                    <img src="/src/assets/JS.svg" alt="javascript" />
+                    <img src={reactLogo} alt="react" />
+                    <img src={htmlLogo} alt="html" />
+                    <img src={cssLogo} alt="css" />
+                    <img src={jsLogo} alt="javascript" />
                 </div>
             </fieldset>
             <div className="social-links">
-                <a href="#"><img src="/src/assets/github.svg" alt="" /></a>
-                <a href="#"><img src="/src/assets/threads.png" alt="" /></a>
-                <a href="#"><img src="/src/assets/x.png" alt="" id="x-logo" /></a>
+                <a href="#"><img src={githubLogo} alt="" /></a>
+                <a href="#"><img src={threadsLogo} alt="" /></a>
+                <a href="#"><img src={xLogo} alt="" id="x-logo" /></a>
             </div>
         </div>
     )

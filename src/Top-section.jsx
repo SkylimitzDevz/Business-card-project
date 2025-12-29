@@ -1,9 +1,11 @@
 // eslint-disable react-refresh/only-export-components 
+import pfp from './assets/pfp.png'
+
 function Header(){
     return(
         <div className="profile-container">
             <div className="pfp-container">
-                <img src="src/assets/pfp.png" alt="" />
+                <img src={pfp} alt="" />
             </div>
             <div className="info-container">
                 <h1>Ridma Pawan</h1>

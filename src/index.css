@@ -1,0 +1,39 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+/* styling */
+
+:root{
+    --bg: #020112;
+    --card-bg: linear-gradient(to top, #541E83, #110043);
+    --sub-text: #CEACF2;
+    --main-text: #FFFFFF;
+    --subtitle: #CACACA;
+    --primary: #9E54DE;
+    --secondary: #320067;
+    --highlights: #6E32A2;
+    --stroke: #8554B9;
+    --shine: #ffffff25;
+    --btn-bg: #260043;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--main-text);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    margin:10px;
+}
+
+::selection{
+    background: var(--primary);
+    color: var(--main-text);
+}
